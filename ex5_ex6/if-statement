@@ -1,0 +1,82 @@
+
+if(TEST){
+    CODE;
+} else if(TEST) {
+    CODE;
+} else {
+    CODE;
+}
+
+
+
+switch (OPERAND){
+    case CONSTANT:
+        CODE;
+        break;
+    default:
+        CODE;
+}
+
+while(TEST){
+    CODE;
+}
+
+while(TEST){
+    if(OTHER_TEST) {
+        continue;
+    }
+    CODE;
+}
+
+while(TEST){
+    if(OTHER_TEST) {
+        break;
+    }
+    CODE;
+}
+
+do {
+    CODE;
+} while(TEST);
+
+
+for(INIT; TEST; POST){
+    CODE;
+}
+
+enum { CONST1, CONST2, CONST3 } NAME;
+
+
+
+if(ERROR_TEST) {
+    goto fail;
+}
+
+fail:
+    CODE;
+
+TYPE NAME(ARG1, ARG2, ..) {
+    CODE;
+    return VALUE;
+}
+
+typedef DEFINITION IDENTIFIER;
+typedef unsigned char my_type ;
+
+struct NAME {
+    ELEMENTS;
+} [VARIABLE_NAME];
+
+typedef struct [STRUCT_NAME] {
+    ELEMENTS;
+} IDENTIFIER;
+
+union NAME {
+    ELEMENTS;
+} [VARIABLE_NAME];
+
+
+
+
+
+
